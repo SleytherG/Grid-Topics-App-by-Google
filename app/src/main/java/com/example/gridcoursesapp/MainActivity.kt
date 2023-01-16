@@ -11,8 +11,6 @@ import androidx.compose.foundation.lazy.GridCells
 import androidx.compose.foundation.lazy.LazyVerticalGrid
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -21,7 +19,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.gridcoursesapp.data.Datasource
 import com.example.gridcoursesapp.model.Topic
 import com.example.gridcoursesapp.ui.theme.GridCoursesAppTheme
@@ -72,7 +69,7 @@ fun TopicCard(topic: Topic, modifier: Modifier = Modifier) {
      painter = painterResource(id = topic.imageResourceId),
 //     painter = painterResource(id = R.drawable.architecture),
      contentDescription = stringResource(id = R.string.architecture),
-     modifier = Modifier.size(width = 68.dp, height = 68.dp),
+     modifier = Modifier.size(width = 71.dp, height = 75.dp),
      contentScale = ContentScale.Crop
     )
    }
